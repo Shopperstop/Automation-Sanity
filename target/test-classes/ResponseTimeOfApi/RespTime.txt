@@ -1,0 +1,2 @@
+Response time of APIs: 
+http://qcpeapi.smarteinc.com/api/v1/enrich : 269.28125 ms 

@@ -4,8 +4,7 @@ import com.smarteinc.utility.APIUtility;
 
 public class PEApiInputObjects {
 	
-	private String companyId;
-
+	private String recordId;
 	private String companyGuid;
 	private String contactFirstName;
 	private String contactMiddleName;
@@ -19,23 +18,26 @@ public class PEApiInputObjects {
 	private String contactCountry;
 	private String phone;
 	private String companyWebAddress;
+	private String piid;
+	private String contactUrl;
 	private String contactGuid;
+	private String objectType;
+	private String accountId;
 	
 	
-	
-	 public String getCompanyId() {
-	        return companyId;
+	    public String getRecordId() {
+	        return recordId;
 	    }
 
-	    public void setComapnyId(String companyId) {
-	        this.companyId = companyId;
+	    public void setRecordId(String recordId) {
+	        this.recordId = recordId;
 	    }
 	    
-	   public String getCompGuid() {
+	    public String getCompanyGuid() {
 	        return companyGuid;
 	    }
 
-	    public void setCompGuid(String companyGuid) {
+	    public void setCompanyGuid(String companyGuid) {
 	        this.companyGuid = companyGuid;
 	    }
 	    
@@ -84,7 +86,7 @@ public class PEApiInputObjects {
 	    }
 	    
 	    
-	    public String getcontactJobTitle() {
+	    public String getContactJobTitle() {
 	        return contactJobTitle;
 	    }
 
@@ -92,7 +94,7 @@ public class PEApiInputObjects {
 	        this.contactJobTitle = contactJobTitle;
 	    }
 	    
-	    public String getcompanyName() {
+	    public String getCompanyName() {
 	        return companyName;
 	    }
 
@@ -145,6 +147,35 @@ public class PEApiInputObjects {
 
 	    public void setContactGuid(String contactGuid) {
 	        this.contactGuid = contactGuid;
+	    }
+	    
+	    public String getPiid() {
+	        return piid;
+	    }
+
+	    public void setPiid(String piid) {
+	        this.piid = piid;
+	    }
+	    public String getContactUrl() {
+	        return contactUrl;
+	    }
+
+	    public void setContactUrl(String contactUrl) {
+	        this.contactUrl = contactUrl;
+	    }
+	    public String getObjectType() {
+	        return objectType;
+	    }
+
+	    public void setObjectType(String objectType) {
+	        this.objectType = objectType;
+	    }
+	    public String getAccountId() {
+	        return accountId;
+	    }
+
+	    public void setAccountId(String accountId) {
+	        this.accountId = accountId;
 	    }
 	    
 }

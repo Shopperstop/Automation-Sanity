@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Poonam Jha\AppData\Local\Temp\testng-eclipse-1582901050\testng-customsuite.xml</span>
+                    <span>C:\Users\Kailash.Kasa\AppData\Local\Temp\testng-eclipse-1680474572\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.smarteinc.api.tests.PEAPI_Modes" hash-for-method="verify_DGMode">verify_DGMode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,10 +117,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.smarteinc.api.tests.PEAPI_Modes</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_DGMode">
+                  </a> <!-- verify_DGMode -->
+                  <span class="method-name">verify_DGMode</span>
+                  <div class="stack-trace">java.lang.AssertionError: Rule test has failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.smarteinc.workflow.PEAPI_Mode.verifyPEAPIMode(PEAPI_Mode.java:147)
+	at com.smarteinc.api.tests.PEAPI_Modes.verify_DGMode(PEAPI_Modes.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Poonam Jha\AppData\Local\Temp\testng-eclipse-1582901050\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Kailash.Kasa\AppData\Local\Temp\testng-eclipse-1680474572\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -115,7 +175,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.smarteinc.salesforce.ui.CreateCustomFields&quot;/&gt;
+      &lt;class name=&quot;com.smarteinc.api.tests.PEAPI_Modes&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verify_DGMode&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.smarteinc.api.tests.PEAPI_Modes --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -155,11 +219,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verify_DGMode')
+data.setCell(0, 2, 'com.smarteinc.api.tests.PEAPI_Modes')
+data.setCell(0, 3, 11071);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -170,13 +239,41 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_DGMode</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Creating cell</span>
+                <span class="reporter-method-output">Updated Fail Successfully in Col No : 19 and Row No : 1</span>
+                <span class="reporter-method-output">Creating cell</span>
+                <span class="reporter-method-output">Updated Row Id : 2,conGUIDRow Id : 2,compGUIDRow Id : 2,conEmailRow Id : 4,conGUIDRow Id : 4,compGUIDRow Id : 4,conEmailRow Id : 6,conGUIDRow Id : 6,compGUIDRow Id : 6,conEmailRow Id : 8,conGUIDRow Id : 8,compGUIDRow Id : 8,conEmailRow Id : 10,conGUIDRow Id : 10,compGUIDRow Id : 10,conEmailRow Id : 10,conEmailStatusRow Id : 11,conEmailRow Id : 11,conEmailStatusRow Id : 12,conGUIDRow Id : 12,compGUIDRow Id : 12,conEmailRow Id : 12,conEmailStatusRow Id : 14,conGUIDRow Id : 14,compGUIDRow Id : 14,conEmailRow Id : 14,conEmailStatusRow Id : 15,conEmailRow Id : 15,conEmailStatusRow Id : 16,conGUIDRow Id : 16,compGUIDRow Id : 16,conEmailRow Id : 16,conEmailStatus Successfully in Col No : 20 and Row No : 1</span>
+                <span class="reporter-method-output">Creating cell</span>
+                <span class="reporter-method-output">Updated Fail Successfully in Col No : 19 and Row No : 2</span>
+                <span class="reporter-method-output">Creating cell</span>
+                <span class="reporter-method-output">Updated Row Id : 2,conGUIDRow Id : 2,compGUIDRow Id : 2,conEmailRow Id : 4,conGUIDRow Id : 4,compGUIDRow Id : 4,conEmailRow Id : 6,conGUIDRow Id : 6,compGUIDRow Id : 6,conEmailRow Id : 8,conGUIDRow Id : 8,compGUIDRow Id : 8,conEmailRow Id : 10,conGUIDRow Id : 10,compGUIDRow Id : 10,conEmailRow Id : 10,conEmailStatusRow Id : 11,conEmailRow Id : 11,conEmailStatusRow Id : 12,conGUIDRow Id : 12,compGUIDRow Id : 12,conEmailRow Id : 12,conEmailStatusRow Id : 14,conGUIDRow Id : 14,compGUIDRow Id : 14,conEmailRow Id : 14,conEmailStatusRow Id : 15,conEmailRow Id : 15,conEmailStatusRow Id : 16,conGUIDRow Id : 16,compGUIDRow Id : 16,conEmailRow Id : 16,conEmailStatus Successfully in Col No : 20 and Row No : 2</span>
+                <span class="reporter-method-output">Successfuly saved file to : /C:/Code/Automation_Sanity/com.smarteinc.automation/target/test-classes/TestData/Mode/NewPEAPI_client.xlsx</span>
+                <span class="reporter-method-output">java.lang.AssertionError: Rule test has failed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.smarteinc.api.tests.PEAPI_Modes</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_PEMode2</span>
+                <br/>
+                <span class="ignored-method-name">verify_PEMode</span>
+                <br/>
+                <span class="ignored-method-name">verify_DGODMode</span>
+                <br/>
+                <span class="ignored-method-name">verify_CEMode</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -185,11 +282,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.smarteinc.salesforce.ui.CreateCustomFields</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initializemanager</span>
+              <div class="chronological-class-name">com.smarteinc.api.tests.PEAPI_Modes</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">intializeManager</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_DGMode</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardownManagers</span>
+                <span class="method-start">11730 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

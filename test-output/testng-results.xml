@@ -1,17 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="1" ignored="4" total="5" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[Creating cell]]>
+    </line>
+    <line>
+      <![CDATA[Updated Fail Successfully in Col No : 19 and Row No : 1]]>
+    </line>
+    <line>
+      <![CDATA[Creating cell]]>
+    </line>
+    <line>
+      <![CDATA[Updated Row Id : 2,conGUIDRow Id : 2,compGUIDRow Id : 2,conEmailRow Id : 4,conGUIDRow Id : 4,compGUIDRow Id : 4,conEmailRow Id : 6,conGUIDRow Id : 6,compGUIDRow Id : 6,conEmailRow Id : 8,conGUIDRow Id : 8,compGUIDRow Id : 8,conEmailRow Id : 10,conGUIDRow Id : 10,compGUIDRow Id : 10,conEmailRow Id : 10,conEmailStatusRow Id : 11,conEmailRow Id : 11,conEmailStatusRow Id : 12,conGUIDRow Id : 12,compGUIDRow Id : 12,conEmailRow Id : 12,conEmailStatusRow Id : 14,conGUIDRow Id : 14,compGUIDRow Id : 14,conEmailRow Id : 14,conEmailStatusRow Id : 15,conEmailRow Id : 15,conEmailStatusRow Id : 16,conGUIDRow Id : 16,compGUIDRow Id : 16,conEmailRow Id : 16,conEmailStatus Successfully in Col No : 20 and Row No : 1]]>
+    </line>
+    <line>
+      <![CDATA[Creating cell]]>
+    </line>
+    <line>
+      <![CDATA[Updated Fail Successfully in Col No : 19 and Row No : 2]]>
+    </line>
+    <line>
+      <![CDATA[Creating cell]]>
+    </line>
+    <line>
+      <![CDATA[Updated Row Id : 2,conGUIDRow Id : 2,compGUIDRow Id : 2,conEmailRow Id : 4,conGUIDRow Id : 4,compGUIDRow Id : 4,conEmailRow Id : 6,conGUIDRow Id : 6,compGUIDRow Id : 6,conEmailRow Id : 8,conGUIDRow Id : 8,compGUIDRow Id : 8,conEmailRow Id : 10,conGUIDRow Id : 10,compGUIDRow Id : 10,conEmailRow Id : 10,conEmailStatusRow Id : 11,conEmailRow Id : 11,conEmailStatusRow Id : 12,conGUIDRow Id : 12,compGUIDRow Id : 12,conEmailRow Id : 12,conEmailStatusRow Id : 14,conGUIDRow Id : 14,compGUIDRow Id : 14,conEmailRow Id : 14,conEmailStatusRow Id : 15,conEmailRow Id : 15,conEmailStatusRow Id : 16,conGUIDRow Id : 16,compGUIDRow Id : 16,conEmailRow Id : 16,conEmailStatus Successfully in Col No : 20 and Row No : 2]]>
+    </line>
+    <line>
+      <![CDATA[Successfuly saved file to : /C:/Code/Automation_Sanity/com.smarteinc.automation/target/test-classes/TestData/Mode/NewPEAPI_client.xlsx]]>
+    </line>
+    <line>
+      <![CDATA[java.lang.AssertionError: Rule test has failed]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17225" started-at="2020-02-21T06:18:33Z" finished-at="2020-02-21T06:18:50Z">
+  <suite name="Default suite" duration-ms="11118" started-at="2020-07-28T08:15:47Z" finished-at="2020-07-28T08:15:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17225" started-at="2020-02-21T06:18:33Z" finished-at="2020-02-21T06:18:50Z">
-      <class name="com.smarteinc.salesforce.ui.CreateCustomFields">
-        <test-method status="PASS" signature="initializemanager()[pri:0, instance:com.smarteinc.salesforce.ui.CreateCustomFields@10d59286]" name="initializemanager" is-config="true" duration-ms="17214" started-at="2020-02-21T06:18:33Z" finished-at="2020-02-21T06:18:50Z">
+    <test name="Default test" duration-ms="11118" started-at="2020-07-28T08:15:47Z" finished-at="2020-07-28T08:15:58Z">
+      <class name="com.smarteinc.api.tests.PEAPI_Modes">
+        <test-method status="PASS" signature="intializeManager()[pri:0, instance:com.smarteinc.api.tests.PEAPI_Modes@3232a28a]" name="intializeManager" is-config="true" duration-ms="15" started-at="2020-07-28T08:15:47Z" finished-at="2020-07-28T08:15:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializemanager -->
-      </class> <!-- com.smarteinc.salesforce.ui.CreateCustomFields -->
+        </test-method> <!-- intializeManager -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.smarteinc.api.tests.PEAPI_Modes@3232a28a]" name="beforeTest" is-config="true" duration-ms="4" started-at="2020-07-28T08:15:47Z" finished-at="2020-07-28T08:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="verify_DGMode()[pri:0, instance:com.smarteinc.api.tests.PEAPI_Modes@3232a28a]" name="verify_DGMode" duration-ms="11071" started-at="2020-07-28T08:15:47Z" finished-at="2020-07-28T08:15:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Rule test has failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Rule test has failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.smarteinc.workflow.PEAPI_Mode.verifyPEAPIMode(PEAPI_Mode.java:147)
+at com.smarteinc.api.tests.PEAPI_Modes.verify_DGMode(PEAPI_Modes.java:200)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Creating cell]]>
+            </line>
+            <line>
+              <![CDATA[Updated Fail Successfully in Col No : 19 and Row No : 1]]>
+            </line>
+            <line>
+              <![CDATA[Creating cell]]>
+            </line>
+            <line>
+              <![CDATA[Updated Row Id : 2,conGUIDRow Id : 2,compGUIDRow Id : 2,conEmailRow Id : 4,conGUIDRow Id : 4,compGUIDRow Id : 4,conEmailRow Id : 6,conGUIDRow Id : 6,compGUIDRow Id : 6,conEmailRow Id : 8,conGUIDRow Id : 8,compGUIDRow Id : 8,conEmailRow Id : 10,conGUIDRow Id : 10,compGUIDRow Id : 10,conEmailRow Id : 10,conEmailStatusRow Id : 11,conEmailRow Id : 11,conEmailStatusRow Id : 12,conGUIDRow Id : 12,compGUIDRow Id : 12,conEmailRow Id : 12,conEmailStatusRow Id : 14,conGUIDRow Id : 14,compGUIDRow Id : 14,conEmailRow Id : 14,conEmailStatusRow Id : 15,conEmailRow Id : 15,conEmailStatusRow Id : 16,conGUIDRow Id : 16,compGUIDRow Id : 16,conEmailRow Id : 16,conEmailStatus Successfully in Col No : 20 and Row No : 1]]>
+            </line>
+            <line>
+              <![CDATA[Creating cell]]>
+            </line>
+            <line>
+              <![CDATA[Updated Fail Successfully in Col No : 19 and Row No : 2]]>
+            </line>
+            <line>
+              <![CDATA[Creating cell]]>
+            </line>
+            <line>
+              <![CDATA[Updated Row Id : 2,conGUIDRow Id : 2,compGUIDRow Id : 2,conEmailRow Id : 4,conGUIDRow Id : 4,compGUIDRow Id : 4,conEmailRow Id : 6,conGUIDRow Id : 6,compGUIDRow Id : 6,conEmailRow Id : 8,conGUIDRow Id : 8,compGUIDRow Id : 8,conEmailRow Id : 10,conGUIDRow Id : 10,compGUIDRow Id : 10,conEmailRow Id : 10,conEmailStatusRow Id : 11,conEmailRow Id : 11,conEmailStatusRow Id : 12,conGUIDRow Id : 12,compGUIDRow Id : 12,conEmailRow Id : 12,conEmailStatusRow Id : 14,conGUIDRow Id : 14,compGUIDRow Id : 14,conEmailRow Id : 14,conEmailStatusRow Id : 15,conEmailRow Id : 15,conEmailStatusRow Id : 16,conGUIDRow Id : 16,compGUIDRow Id : 16,conEmailRow Id : 16,conEmailStatus Successfully in Col No : 20 and Row No : 2]]>
+            </line>
+            <line>
+              <![CDATA[Successfuly saved file to : /C:/Code/Automation_Sanity/com.smarteinc.automation/target/test-classes/TestData/Mode/NewPEAPI_client.xlsx]]>
+            </line>
+            <line>
+              <![CDATA[java.lang.AssertionError: Rule test has failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_DGMode -->
+        <test-method status="PASS" signature="teardownManagers()[pri:0, instance:com.smarteinc.api.tests.PEAPI_Modes@3232a28a]" name="teardownManagers" is-config="true" duration-ms="15" started-at="2020-07-28T08:15:59Z" finished-at="2020-07-28T08:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownManagers -->
+      </class> <!-- com.smarteinc.api.tests.PEAPI_Modes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
